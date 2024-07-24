@@ -1,58 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Monster List</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="heading">
-    <div class="item">
-      <h2 class="ui header">
-        <i class="orange ticket icon"></i>
-        <div class="content">Monster List</div>
-        <div class="sub header" id="subtitle">View and Create Monsters</div>
-      </h2>
-    </div>
-  </div>
-
-  <div class="ui centered grid">
-    <div class="four wide column">
-      <div class="list-container">
-        <ul class="ui divided list" id="monster-list">
-          <li class="monster item">Monsters will be displayed here.</li>
-        </ul>
-      </div>
+    <!-- Header -->
+    <div class="ui container">
+        <h1 class="ui header">
+            <i class="blue monster icon"></i>
+            <div class="content">Monster Dashboard</div>
+            <div class="sub header">Manage Your Monsters</div>
+        </h1>
     </div>
 
-    <div class="four wide column">
-      <form id="create-monster-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age"><br><br>
-        <label for="description">Description:</label>
-        <textarea id="description" name="description"></textarea><br><br>
-        <input type="submit" value="Create Monster">
-      </form>
-    </div>
-
-    <div class="four wide column">
-      <div class="ui cards" id="monster-details">
-        <div class="card">
-          <div id="monster-name" class="title">[MONSTER NAME]</div>
-          <div id="monster-age" class="meta">[MONSTER AGE] years old</div>
-          <div class="content">
-            <div class="description">
-              <div id="monster-description">[MONSTER DESCRIPTION]</div>
-            </div>
-          </div>
+    <div class="ui container">
+        <!-- Monster Form -->
+        <div class="ui segment">
+            <h2 class="ui header">Create a New Monster</h2>
+            <form id="monster-form" class="ui form">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="field">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Age" required>
+                </div>
+                <div class="field">
+                    <label for="description">Description</label>
+                    <textarea id="description" placeholder="Description" required></textarea>
+                </div>
+                <button type="submit" class="ui green button">Create Monster</button>
+            </form>
         </div>
-      </div>
+
+        <!-- Monster List -->
+        <div class="ui segment">
+            <h2 class="ui header">Monster List</h2>
+            <ul id="monster-container" class="ui list">
+              
+            </ul>
+        </div>
     </div>
-  </div>
 </body>
 </html>

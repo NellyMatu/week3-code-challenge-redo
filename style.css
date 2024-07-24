@@ -1,77 +1,100 @@
-body {
-  background-image: url(https://i.pinimg.com/564x/3e/b7/0c/3eb70cd1e9fcfcf096c3879ad002f39b.jpg);
-  background-repeat: no-repeat;
+body{
+  background-image: url(https://i.pinimg.com/236x/29/4f/b6/294fb620739f83e28ca7f968f4a4b69e.jpg);
   background-size: cover;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    max-width: 500px; 
+    padding: 20px;
+
+}
+.page-wrapper {
+  max-width: 500px; 
+    padding: 20px;      
 }
 
-.heading {
-  background-color: #1d1a1a;
-  margin-bottom: 20px;
-  padding: 5px 0px 5px 15px;
-}
 
-.title {
-  background-color: #333333;
-  padding: 5px;
-  color: rgb(8, 218, 19);
+.create-monster-form button[type="submit"]:hover {
+  background-color: #359154;
 }
-
-.monster-name {
-  background-color: #333333;
-  color: #3ea3de;
-  padding: 0px 0px 5px 5px;
-}
-
-.content {
-  color: #613ede;
-}
-
-#subtitle {
-  color: white;
-  margin-left: 50px;
-}
-
-#monster-list {
-  margin-left: 20px;
-}
-
-.monster {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.monster:hover {
-  background-color: #f0f0f0;
-  cursor: pointer;
-}
-
-.monster-details {
-  margin-left: 20px;
-}
-
-#monster-description {
-  padding-bottom: 15px;
-}
-
-#create-monster-form {
+.ui.container h1.ui.header {
   margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 1000px;
+  background-color: rgb(218, 39, 209);
 }
 
-#create-monster-form input, #create-monster-form textarea {
+
+.ui.segment {
+  background-color: #efa9f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 1000px;
+  align-items: center;
+}
+
+.ui.form .field label {
+  font-weight: bold;
+}
+
+.ui.form .field input,
+.ui.form .field textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  border: 1px solid #e58989;
+  border-radius: 3px;
 }
 
-#create-monster-form input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
+.ui.form .ui.green.button {
+  background-color: #21ba45;
+  color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
-#create-monster-form input[type="submit"]:hover {
-  background-color: #3e8e41;
+.ui.form .ui.green.button:hover {
+  background-color: #16ab39;
 }
+
+
+#monster-container {
+  list-style-type: none;
+  padding: 0;
+}
+
+#monster-container .item {
+  background-color: #fcf1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(189, 50, 50, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#monster-container .item .header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#monster-container .item .description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+
+  
+  .ui.container {
+      padding: 10px;
+  }
+  .ui.form .field input,
+  .ui.form .field textarea {
+      padding: 8px;
+  }
+  .ui.form .ui.green.button {
+      padding: 8px 16px;
+  }
