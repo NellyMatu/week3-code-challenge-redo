@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Monster List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="heading">
+      <div class="item">
+        <h2 class="ui header">
+          <i class="orange ticket icon"></i>
+          <div class="content">Monster List</div>
+          <div class="sub header" id="subtitle">View and Create Monsters</div>
+        </h2>
+      </div>
+    </div>
+
+    <div class="ui centered grid">
+      <div class="four wide column">
+        <div class="list-container">
+          <!-- monster list -->
+          <ul class="ui divided list" id="monster-list">
+            <li class="monster item">Monsters will be displayed here.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- create monster form -->
+      <div class="four wide column">
+        <form id="create-monster-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age"><br><br>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description"></textarea><br><br>
+          <input type="submit" value="Create Monster">
+        </form>
+      </div>
+
+      <!-- monster details -->
+      <div class="four wide column">
+        <div class="ui cards" id="monster-details">
+          <div class="card">
+            <div id="monster-name" class="title">[MONSTER NAME]</div>
+            <div id="monster-age" class="meta">[MONSTER AGE] years old</div>
+            <div class="content">
+              <div class="description">
+                <div id="monster-description">[MONSTER DESCRIPTION]</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
