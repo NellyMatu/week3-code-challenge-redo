@@ -1,5 +1,5 @@
 // API URL
-const apiUrl = "http://localhost:3000/monsters";
+const apiUrl = "https://week3redo-backend.vercel.app/monsters";
 
 // Select elements from the DOM
 const monsterContainer = document.querySelector("#monster-container");
