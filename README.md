@@ -134,7 +134,7 @@ The project structure is as follows:
 Open the folder location on the terminal and use the following command to run the app:
 
 ### VERCEL LINK(LIVE LINK)
-[live link to my webiste]()
+[live link to my webiste](https://week3-code-challenge-redo.vercel.app/)
 
 ### HOW TO RUN ALL CODES
 clone the repository run using live server
