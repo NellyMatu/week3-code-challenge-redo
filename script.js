@@ -13,7 +13,7 @@ function fetchMonsters(limit = 50, page = 1) {
 const apiUrl = `${apiUrl}/?_limit=${limit}&_page=${page}`;
 
 // Fetch the monsters from the apiUrl 
-    fetch(apiUrl)
+    fetch(apiUrlWithParams)
     .then(response => response.json())
     .then(monsters => {
       monsters.forEach(displayMonster);// Display each monster
