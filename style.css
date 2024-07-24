@@ -1,77 +1,77 @@
-body{
-    background-image: url(https://i.pinimg.com/564x/3e/b7/0c/3eb70cd1e9fcfcf096c3879ad002f39b.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  background-image: url(https://i.pinimg.com/564x/3e/b7/0c/3eb70cd1e9fcfcf096c3879ad002f39b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heading {
-    background-color: #1d1a1a;
-    margin-bottom: 20px;
-    padding: 5px 0px 5px 15px;
-  }
-  
-  .title {
-    background-color: #333333;
-    padding: 5px;
-    color: rgb(8, 218, 19);
-  }
-  
-  .monster-name {
-    background-color: #333333;
-    color: #3ea3de;
-    padding: 0px 0px 5px 5px;
-  }
-  
-  .content {
-    color: #613ede;
-  }
-  
-  #subtitle {
-    color: white;
-    margin-left: 50px;
-  }
-  
-  #monster-list {
-    margin-left: 20px;
-  }
-  
-  .monster {
-    font-size: 18px;
-    text-transform: uppercase;
-  }
-  
-  .monster:hover {
-    background-color: #f0f0f0;
-    cursor: pointer;
-  }
-  
-  .monster-details {
-    margin-left: 20px;
-  }
-  
-  #monster-description {
-    padding-bottom: 15px;
-  }
-  
-  #create-monster-form {
-    margin-top: 20px;
-  }
-  
-  #create-monster-form input, #create-monster-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  #create-monster-form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #create-monster-form input[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
+  background-color: #1d1a1a;
+  margin-bottom: 20px;
+  padding: 5px 0px 5px 15px;
+}
+
+.title {
+  background-color: #333333;
+  padding: 5px;
+  color: rgb(8, 218, 19);
+}
+
+.monster-name {
+  background-color: #333333;
+  color: #3ea3de;
+  padding: 0px 0px 5px 5px;
+}
+
+.content {
+  color: #613ede;
+}
+
+#subtitle {
+  color: white;
+  margin-left: 50px;
+}
+
+#monster-list {
+  margin-left: 20px;
+}
+
+.monster {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.monster:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.monster-details {
+  margin-left: 20px;
+}
+
+#monster-description {
+  padding-bottom: 15px;
+}
+
+#create-monster-form {
+  margin-top: 20px;
+}
+
+#create-monster-form input, #create-monster-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#create-monster-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#create-monster-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}

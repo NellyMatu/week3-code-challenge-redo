@@ -12,11 +12,11 @@ function fetchMonsters(limit = 50, page = 1) {
 // Construct the apiUrl with query parameters
 const apiUrl = `${apiUrl}/?_limit=${limit}&_page=${page}`;
 
-// Fetch the monsters from the apiUrl and display each
+// Fetch the monsters from the apiUrl 
     fetch(apiUrl)
     .then(response => response.json())
     .then(monsters => {
-      monsters.forEach(displayMonster);
+      monsters.forEach(displayMonster);// Display each monster
     });
 }
 
@@ -26,15 +26,20 @@ const createMonsterForm = document.querySelector("#create-monster-form");
 
 // Function to display a monster's details
 function displayMonster(monster) {
+
+  // Create a new div for the monster
   const monsterDiv = document.createElement("div");
   monsterDiv.className = "monster";
   
+  // Create and set the monster's name element
   const monsterName = document.createElement("h2");
   monsterName.textContent = monster.name;
-  
+
+  // Create and set the monster's age element
   const monsterAge = document.createElement("p");
   monsterAge.textContent = `Age: ${monster.age}`;
-  
+
+  // Create and set the monster's description element
   const monsterDescription = document.createElement("p");
   monsterDescription.textContent = `Description: ${monster.description}`;
 
@@ -71,10 +76,10 @@ function displayMonster(monster) {
       "Content-Type": "application/json",
       Accept: "application/json"
     },
-    body: JSON.stringify(newMonster)
+    body: JSON.stringify(newMonster)//convert to JSON
   })
-  .then(response => response.json())
-  .then(displayMonster);
+  .then(response => response.json())//parse json response
+  .then(displayMonster);//Display the newly created monster
   
   // Clear the form fields
   document.querySelector("#name").value = "";
